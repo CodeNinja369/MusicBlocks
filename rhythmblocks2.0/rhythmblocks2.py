@@ -22,13 +22,25 @@ class baseBlock():
         self.arrayPos = [pygame.Rect(0,0,121,110), pygame.Rect(125,0,121,110), pygame.Rect(250,0,121,110), pygame.Rect(375,0,121,110)]
 
 pygame.init()
-screen = pygame.display.set_mode((500, 500))
-running = True
+
+font = pygame.font.SysFont(None, 24)
+text = font.render('playing', True, "black")
+
+
 
 #blockset one is just filler for until i can get an actual artist to draw blocks
 titiImage = pygame.image.load("blockset 1\\titiblock.png")
 taImage = pygame.image.load("blockset 1\\tablock.png")
 restImage = pygame.image.load("blockset 1\\restblock.png")
+iconImage = pygame.image.load("blockset 1\\icon.png")
+
+iconImage = pygame.transform.scale(iconImage,(32,32))
+#setting settings
+screen = pygame.display.set_mode((500, 500))
+running = True
+pygame.display.set_caption("Rhythm Blocks")
+pygame.display.set_icon(iconImage)
+
 
 drawlist = []
 base = baseBlock(4)
@@ -53,7 +65,6 @@ while running:
         
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_p:
-
                 rhythm = []
                 for j in base.array:
                     if j!= None:
@@ -69,7 +80,7 @@ while running:
             if event.key == pygame.K_3:
                 currentBlockType = rest
 
-    screen.fill('white')
+    screen.fill('light blue')
     
     for i, k in enumerate(base.array):
         if k!=None:

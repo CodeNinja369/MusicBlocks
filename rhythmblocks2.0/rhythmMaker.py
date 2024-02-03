@@ -6,7 +6,7 @@ def createRhythm(rhythm):
 
     for symbol in rhythm:
         if symbol == 'ta':
-            note_ta = note.Note('C4', quarterLength=1.0)
+            note_ta = note.Note('C4', quarterLength=1.0) #length of notes create individual pieces of rythm. think of 1 as a quarter and 0.5 as an 8th
             part.append(note_ta)
         elif symbol == 'ta-a':#ta-a here for later
             note_ta_a = note.Note('C4', quarterLength = 2.0)
@@ -18,7 +18,7 @@ def createRhythm(rhythm):
         elif symbol == 'tika-tika':
             note_tika_tika = note.Note('C4', quarterLength=0.25)
             note_tika_tika2 = note.Note('C4', quarterLength=0.25)
-            note_tika_tika3 = note.Note('C4', quarterLength=0.25)
+            note_tika_tika3 = note.Note('C4', quarterLength=0.25) 
             note_tika_tika4 = note.Note('C4', quarterLength=0.25)
             part.append([note_tika_tika, note_tika_tika2, note_tika_tika3, note_tika_tika4])
         elif symbol == 'rest':
