@@ -11,7 +11,7 @@ class blockType():
     def __init__(self, rhythm, image):
         self.rhythm = rhythm
         self.image = image
-
+# somewhat allowing for more block slots?
 class baseBlock():
     def __init__(self, length):
         self.length = length
@@ -23,11 +23,6 @@ class baseBlock():
 
 pygame.init()
 
-font = pygame.font.SysFont(None, 24)
-text = font.render('playing', True, "black")
-
-
-
 #blockset one is just filler for until i can get an actual artist to draw blocks
 titiImage = pygame.image.load("blockset 1\\titiblock.png")
 taImage = pygame.image.load("blockset 1\\tablock.png")
@@ -36,11 +31,10 @@ iconImage = pygame.image.load("blockset 1\\icon.png")
 
 iconImage = pygame.transform.scale(iconImage,(32,32))
 #setting settings
-screen = pygame.display.set_mode((500, 500))
+screen = pygame.display.set_mode((500, 500), pygame.RESIZABLE)
 running = True
 pygame.display.set_caption("Rhythm Blocks")
 pygame.display.set_icon(iconImage)
-
 
 drawlist = []
 base = baseBlock(4)
@@ -56,16 +50,19 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-        
         elif event.type == pygame.MOUSEBUTTONDOWN:
             print(pygame.mouse.get_pos())
             for j, i in enumerate(base.arrayPos):
                 if i.collidepoint(pygame.mouse.get_pos()):
                     base.array[j] = currentBlockType
-        
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_p:
                 rhythm = []
+                screen.fill("light blue")
+                for i, k in enumerate(base.array):
+                    if k!=None:
+                        screen.blit(k.image, base.arrayPos[i])
+                pygame.display.flip()
                 for j in base.array:
                     if j!= None:
                         rhythm.append(j.rhythm)
@@ -81,7 +78,6 @@ while running:
                 currentBlockType = rest
 
     screen.fill('light blue')
-    
     for i, k in enumerate(base.array):
         if k!=None:
             screen.blit(k.image, base.arrayPos[i])
