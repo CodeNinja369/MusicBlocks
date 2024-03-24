@@ -1,0 +1,2 @@
+-Requires python 3+
+-needs python libraries: pygame and music21. use pip or whatever you use to install libraries to install them.
