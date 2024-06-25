@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = rhythmBlocks
-build_property.ProjectDir = C:\Users\Leopold Allen\Documents\Year 12 Software Dev\SAT\rhythmBlocks 1.1.2\rhythmBlocks\
+build_property.ProjectDir = C:\Users\Leopold Allen\Documents\GitHub\MusicBlocks\rhythmBlocks 1.1.2\rhythmBlocks\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

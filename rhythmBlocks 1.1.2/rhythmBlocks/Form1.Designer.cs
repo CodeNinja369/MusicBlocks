@@ -54,7 +54,7 @@
             titiButton1 = new Button();
             taButton1 = new Button();
             oSlot4 = new PictureBox();
-            button1 = new Button();
+            playButton1 = new Button();
             oSlot3 = new PictureBox();
             timeSig2 = new Label();
             pictureBox5 = new PictureBox();
@@ -81,7 +81,7 @@
             restButton2 = new Button();
             titiButton2 = new Button();
             taButton2 = new Button();
-            button9 = new Button();
+            playButton2 = new Button();
             tCover3 = new Panel();
             panel7 = new Panel();
             panel3 = new Panel();
@@ -301,7 +301,7 @@
             tabPage2.Controls.Add(titiButton1);
             tabPage2.Controls.Add(taButton1);
             tabPage2.Controls.Add(oSlot4);
-            tabPage2.Controls.Add(button1);
+            tabPage2.Controls.Add(playButton1);
             tabPage2.Controls.Add(oSlot3);
             tabPage2.Controls.Add(timeSig2);
             tabPage2.Controls.Add(pictureBox5);
@@ -399,13 +399,14 @@
             oSlot4.Visible = false;
             oSlot4.Click += oSlot4_Click;
             // 
-            // button1
+            // playButton1
             // 
-            button1.Location = new Point(570, 317);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 38);
-            button1.TabIndex = 43;
-            button1.UseVisualStyleBackColor = true;
+            playButton1.Location = new Point(570, 317);
+            playButton1.Name = "playButton1";
+            playButton1.Size = new Size(94, 38);
+            playButton1.TabIndex = 43;
+            playButton1.UseVisualStyleBackColor = true;
+            playButton1.Click += playButton1_Click;
             // 
             // oSlot3
             // 
@@ -502,7 +503,7 @@
             gradeTwoTab.Controls.Add(restButton2);
             gradeTwoTab.Controls.Add(titiButton2);
             gradeTwoTab.Controls.Add(taButton2);
-            gradeTwoTab.Controls.Add(button9);
+            gradeTwoTab.Controls.Add(playButton2);
             gradeTwoTab.Controls.Add(tCover3);
             gradeTwoTab.Location = new Point(4, 29);
             gradeTwoTab.Name = "gradeTwoTab";
@@ -665,13 +666,14 @@
             taButton2.UseVisualStyleBackColor = false;
             taButton2.Click += taButton_Click;
             // 
-            // button9
+            // playButton2
             // 
-            button9.Location = new Point(650, 317);
-            button9.Name = "button9";
-            button9.Size = new Size(94, 38);
-            button9.TabIndex = 54;
-            button9.UseVisualStyleBackColor = true;
+            playButton2.Location = new Point(650, 317);
+            playButton2.Name = "playButton2";
+            playButton2.Size = new Size(94, 38);
+            playButton2.TabIndex = 54;
+            playButton2.UseVisualStyleBackColor = true;
+            playButton2.Click += playButton2_Click;
             // 
             // tCover3
             // 
@@ -754,8 +756,8 @@
         private PictureBox pictureBox10;
         private Label timeSig;
         private Button playButton;
-        private Button button1;
-        private Button button9;
+        private Button playButton1;
+        private Button playButton2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Button restButton;
         private Button titiButton;
