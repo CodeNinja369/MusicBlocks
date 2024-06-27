@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Leopold Allen\\Documents\\GitHub\\MusicBlocks\\rhythmBlocks 1.1.2\\",
+  "WorkspaceRootPath": "C:\\Users\\Leopold Allen\\Documents\\Year 12 Software Dev\\SAT\\rhythmBlocks 1.1.2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E0343E8-E9B1-48C3-9D6C-F45260E17C8B}|rhythmBlocks\\rhythmBlocks.csproj|c:\\users\\leopold allen\\documents\\github\\musicblocks\\rhythmblocks 1.1.2\\rhythmblocks\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8E0343E8-E9B1-48C3-9D6C-F45260E17C8B}|rhythmBlocks\\rhythmBlocks.csproj|c:\\users\\leopold allen\\documents\\year 12 software dev\\sat\\rhythmblocks 1.1.2\\rhythmblocks\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8E0343E8-E9B1-48C3-9D6C-F45260E17C8B}|rhythmBlocks\\rhythmBlocks.csproj|solutionrelative:rhythmblocks\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E0343E8-E9B1-48C3-9D6C-F45260E17C8B}|rhythmBlocks\\rhythmBlocks.csproj|c:\\users\\leopold allen\\documents\\github\\musicblocks\\rhythmblocks 1.1.2\\rhythmblocks\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E0343E8-E9B1-48C3-9D6C-F45260E17C8B}|rhythmBlocks\\rhythmBlocks.csproj|c:\\users\\leopold allen\\documents\\year 12 software dev\\sat\\rhythmblocks 1.1.2\\rhythmblocks\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E0343E8-E9B1-48C3-9D6C-F45260E17C8B}|rhythmBlocks\\rhythmBlocks.csproj|solutionrelative:rhythmblocks\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0343E8-E9B1-48C3-9D6C-F45260E17C8B}|rhythmBlocks\\rhythmBlocks.csproj|c:\\users\\leopold allen\\documents\\year 12 software dev\\sat\\rhythmblocks 1.1.2\\rhythmblocks\\rhythmblocks.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8E0343E8-E9B1-48C3-9D6C-F45260E17C8B}|rhythmBlocks\\rhythmBlocks.csproj|solutionrelative:rhythmblocks\\rhythmblocks.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Leopold Allen\\Documents\\GitHub\\MusicBlocks\\rhythmBlocks 1.1.2\\rhythmBlocks\\Form1.cs",
-              "RelativeDocumentMoniker": "rhythmBlocks\\Form1.cs",
-              "ToolTip": "C:\\Users\\Leopold Allen\\Documents\\GitHub\\MusicBlocks\\rhythmBlocks 1.1.2\\rhythmBlocks\\Form1.cs [Design]",
-              "RelativeToolTip": "rhythmBlocks\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T08:47:53.424Z",
-              "EditorCaption": " [Design]"
+              "DocumentIndex": 2,
+              "Title": "rhythmBlocks.csproj",
+              "DocumentMoniker": "C:\\Users\\Leopold Allen\\Documents\\Year 12 Software Dev\\SAT\\rhythmBlocks 1.1.2\\rhythmBlocks\\rhythmBlocks.csproj",
+              "RelativeDocumentMoniker": "rhythmBlocks\\rhythmBlocks.csproj",
+              "ToolTip": "C:\\Users\\Leopold Allen\\Documents\\Year 12 Software Dev\\SAT\\rhythmBlocks 1.1.2\\rhythmBlocks\\rhythmBlocks.csproj",
+              "RelativeToolTip": "rhythmBlocks\\rhythmBlocks.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-25T06:13:48.409Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Leopold Allen\\Documents\\GitHub\\MusicBlocks\\rhythmBlocks 1.1.2\\rhythmBlocks\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Leopold Allen\\Documents\\Year 12 Software Dev\\SAT\\rhythmBlocks 1.1.2\\rhythmBlocks\\Form1.cs",
               "RelativeDocumentMoniker": "rhythmBlocks\\Form1.cs",
-              "ToolTip": "C:\\Users\\Leopold Allen\\Documents\\GitHub\\MusicBlocks\\rhythmBlocks 1.1.2\\rhythmBlocks\\Form1.cs",
+              "ToolTip": "C:\\Users\\Leopold Allen\\Documents\\Year 12 Software Dev\\SAT\\rhythmBlocks 1.1.2\\rhythmBlocks\\Form1.cs",
               "RelativeToolTip": "rhythmBlocks\\Form1.cs",
-              "ViewState": "AQIAAPAAAAAAAAAAAAArwO0AAAAMAAAA",
+              "ViewState": "AQIAANoAAAAAAAAAAAAmwAAAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T05:56:41.859Z"
+              "WhenOpened": "2024-06-25T05:56:41.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Leopold Allen\\Documents\\Year 12 Software Dev\\SAT\\rhythmBlocks 1.1.2\\rhythmBlocks\\Form1.cs",
+              "RelativeDocumentMoniker": "rhythmBlocks\\Form1.cs",
+              "ToolTip": "C:\\Users\\Leopold Allen\\Documents\\Year 12 Software Dev\\SAT\\rhythmBlocks 1.1.2\\rhythmBlocks\\Form1.cs [Design]",
+              "RelativeToolTip": "rhythmBlocks\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T02:54:42.291Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

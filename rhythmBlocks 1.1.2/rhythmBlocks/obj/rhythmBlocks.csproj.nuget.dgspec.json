@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leopold Allen\\Documents\\GitHub\\MusicBlocks\\rhythmBlocks 1.1.2\\rhythmBlocks\\rhythmBlocks.csproj": {}
+    "C:\\Users\\Leopold Allen\\Documents\\Year 12 Software Dev\\SAT\\rhythmBlocks 1.1.2\\rhythmBlocks\\rhythmBlocks.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leopold Allen\\Documents\\GitHub\\MusicBlocks\\rhythmBlocks 1.1.2\\rhythmBlocks\\rhythmBlocks.csproj": {
+    "C:\\Users\\Leopold Allen\\Documents\\Year 12 Software Dev\\SAT\\rhythmBlocks 1.1.2\\rhythmBlocks\\rhythmBlocks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leopold Allen\\Documents\\GitHub\\MusicBlocks\\rhythmBlocks 1.1.2\\rhythmBlocks\\rhythmBlocks.csproj",
+        "projectUniqueName": "C:\\Users\\Leopold Allen\\Documents\\Year 12 Software Dev\\SAT\\rhythmBlocks 1.1.2\\rhythmBlocks\\rhythmBlocks.csproj",
         "projectName": "rhythmBlocks",
-        "projectPath": "C:\\Users\\Leopold Allen\\Documents\\GitHub\\MusicBlocks\\rhythmBlocks 1.1.2\\rhythmBlocks\\rhythmBlocks.csproj",
+        "projectPath": "C:\\Users\\Leopold Allen\\Documents\\Year 12 Software Dev\\SAT\\rhythmBlocks 1.1.2\\rhythmBlocks\\rhythmBlocks.csproj",
         "packagesPath": "C:\\Users\\Leopold Allen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leopold Allen\\Documents\\GitHub\\MusicBlocks\\rhythmBlocks 1.1.2\\rhythmBlocks\\obj\\",
+        "outputPath": "C:\\Users\\Leopold Allen\\Documents\\Year 12 Software Dev\\SAT\\rhythmBlocks 1.1.2\\rhythmBlocks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

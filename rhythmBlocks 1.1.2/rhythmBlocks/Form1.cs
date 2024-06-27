@@ -64,7 +64,7 @@ namespace rhythmBlocks
             }
 
         }
-        private void play()
+        private void playButton_Click(object sender, EventArgs e)
         {
             foreach (var sound in rhythmList)
             {
@@ -72,10 +72,6 @@ namespace rhythmBlocks
                 SoundPlayer simpleSound = new SoundPlayer(audioPath);
                 simpleSound.PlaySync();
             }
-        }
-        private void playButton_Click(object sender, EventArgs e)
-        {
-            play();
         }
         private void slotClick(PictureBox slot, int slotnum)
         {
@@ -231,16 +227,6 @@ namespace rhythmBlocks
         private void tCover3_Click(object sender, EventArgs e)
         {
             slotClick(tSlot3, 2);
-        }
-
-        private void playButton2_Click(object sender, EventArgs e)
-        {
-            play();
-        }
-
-        private void playButton1_Click(object sender, EventArgs e)
-        {
-            play();
         }
     }
 }
