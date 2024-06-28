@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rhythmBlocks")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a6a4437604f8f429e3a6a30975ccf349817bccd")]
 [assembly: System.Reflection.AssemblyProductAttribute("rhythmBlocks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rhythmBlocks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

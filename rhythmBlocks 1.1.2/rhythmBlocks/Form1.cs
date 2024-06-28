@@ -3,9 +3,12 @@ namespace rhythmBlocks
 {
     public partial class Form1 : Form
     {
+        private Rectangle buttonOriginalRectangle;
+        private Rectangle formOriginalRectangle;
         public Form1()
         {
             InitializeComponent();
+
 
         }
 
@@ -227,6 +230,17 @@ namespace rhythmBlocks
         private void tCover3_Click(object sender, EventArgs e)
         {
             slotClick(tSlot3, 2);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

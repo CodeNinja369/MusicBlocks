@@ -39,7 +39,7 @@
             taButton = new Button();
             playButton = new Button();
             timeSig = new Label();
-            pictureBox10 = new PictureBox();
+            beatBlock = new PictureBox();
             fCover2 = new Panel();
             fCover1 = new Panel();
             fCover3 = new Panel();
@@ -57,7 +57,7 @@
             button1 = new Button();
             oSlot3 = new PictureBox();
             timeSig2 = new Label();
-            pictureBox5 = new PictureBox();
+            beatBlock1 = new PictureBox();
             oCover4 = new Panel();
             panel6 = new Panel();
             oCover1 = new Panel();
@@ -70,7 +70,7 @@
             tSlot3 = new PictureBox();
             tSlot2 = new PictureBox();
             timeSig3 = new Label();
-            pictureBox6 = new PictureBox();
+            beatBlock2 = new PictureBox();
             tCover2 = new Panel();
             tCover1 = new Panel();
             tCover4 = new Panel();
@@ -87,20 +87,21 @@
             panel3 = new Panel();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             panel5 = new Panel();
+            panel1 = new Panel();
             levelSelect.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)fSlot1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fSlot4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fSlot3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fSlot2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)beatBlock).BeginInit();
             fCover4.SuspendLayout();
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)oSlot2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)oSlot1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)oSlot4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)oSlot3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)beatBlock1).BeginInit();
             oCover4.SuspendLayout();
             oCover3.SuspendLayout();
             gradeTwoTab.SuspendLayout();
@@ -108,9 +109,10 @@
             ((System.ComponentModel.ISupportInitialize)tSlot1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)tSlot3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)tSlot2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)beatBlock2).BeginInit();
             tCover4.SuspendLayout();
             tCover3.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // levelSelect
@@ -118,10 +120,11 @@
             levelSelect.Controls.Add(tabPage1);
             levelSelect.Controls.Add(tabPage2);
             levelSelect.Controls.Add(gradeTwoTab);
-            levelSelect.Location = new Point(9, 2);
+            levelSelect.Dock = DockStyle.Fill;
+            levelSelect.Location = new Point(0, 0);
             levelSelect.Name = "levelSelect";
             levelSelect.SelectedIndex = 0;
-            levelSelect.Size = new Size(783, 436);
+            levelSelect.Size = new Size(799, 473);
             levelSelect.TabIndex = 0;
             // 
             // tabPage1
@@ -135,7 +138,7 @@
             tabPage1.Controls.Add(taButton);
             tabPage1.Controls.Add(playButton);
             tabPage1.Controls.Add(timeSig);
-            tabPage1.Controls.Add(pictureBox10);
+            tabPage1.Controls.Add(beatBlock);
             tabPage1.Controls.Add(fCover2);
             tabPage1.Controls.Add(fCover1);
             tabPage1.Controls.Add(fCover3);
@@ -143,13 +146,14 @@
             tabPage1.Location = new Point(4, 29);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(775, 403);
+            tabPage1.Size = new Size(791, 440);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Foundation";
             tabPage1.UseVisualStyleBackColor = true;
             // 
             // fSlot1
             // 
+            fSlot1.Anchor = AnchorStyles.None;
             fSlot1.Location = new Point(177, 28);
             fSlot1.Name = "fSlot1";
             fSlot1.Size = new Size(104, 131);
@@ -161,6 +165,7 @@
             // 
             // fSlot4
             // 
+            fSlot4.Anchor = AnchorStyles.None;
             fSlot4.Enabled = false;
             fSlot4.Location = new Point(489, 28);
             fSlot4.Name = "fSlot4";
@@ -173,6 +178,7 @@
             // 
             // fSlot3
             // 
+            fSlot3.Anchor = AnchorStyles.None;
             fSlot3.Location = new Point(385, 28);
             fSlot3.Name = "fSlot3";
             fSlot3.Size = new Size(104, 131);
@@ -184,6 +190,7 @@
             // 
             // fSlot2
             // 
+            fSlot2.Anchor = AnchorStyles.None;
             fSlot2.Location = new Point(281, 28);
             fSlot2.Name = "fSlot2";
             fSlot2.Size = new Size(104, 131);
@@ -195,6 +202,7 @@
             // 
             // restButton
             // 
+            restButton.Anchor = AnchorStyles.None;
             restButton.BackColor = Color.FromArgb(63, 72, 204);
             restButton.Location = new Point(420, 305);
             restButton.Name = "restButton";
@@ -205,6 +213,7 @@
             // 
             // titiButton
             // 
+            titiButton.Anchor = AnchorStyles.None;
             titiButton.BackColor = Color.FromArgb(255, 127, 39);
             titiButton.Location = new Point(316, 305);
             titiButton.Name = "titiButton";
@@ -215,6 +224,7 @@
             // 
             // taButton
             // 
+            taButton.Anchor = AnchorStyles.None;
             taButton.BackColor = Color.FromArgb(34, 177, 76);
             taButton.Location = new Point(212, 305);
             taButton.Name = "taButton";
@@ -225,6 +235,7 @@
             // 
             // playButton
             // 
+            playButton.Anchor = AnchorStyles.None;
             playButton.Location = new Point(524, 314);
             playButton.Name = "playButton";
             playButton.Size = new Size(94, 38);
@@ -234,6 +245,7 @@
             // 
             // timeSig
             // 
+            timeSig.Anchor = AnchorStyles.None;
             timeSig.AutoSize = true;
             timeSig.Location = new Point(122, 61);
             timeSig.Name = "timeSig";
@@ -241,18 +253,21 @@
             timeSig.TabIndex = 22;
             timeSig.Text = "4/4";
             // 
-            // pictureBox10
+            // beatBlock
             // 
-            pictureBox10.Image = Properties.Resources.original_418AC369_B0AE_4D9F_A0AD_09EC862F2199;
-            pictureBox10.Location = new Point(177, 126);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(416, 140);
-            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox10.TabIndex = 13;
-            pictureBox10.TabStop = false;
+            beatBlock.Anchor = AnchorStyles.None;
+            beatBlock.Image = Properties.Resources.original_418AC369_B0AE_4D9F_A0AD_09EC862F2199;
+            beatBlock.Location = new Point(177, 126);
+            beatBlock.Name = "beatBlock";
+            beatBlock.Size = new Size(416, 140);
+            beatBlock.SizeMode = PictureBoxSizeMode.StretchImage;
+            beatBlock.TabIndex = 13;
+            beatBlock.TabStop = false;
+            beatBlock.Click += pictureBox10_Click;
             // 
             // fCover2
             // 
+            fCover2.Anchor = AnchorStyles.None;
             fCover2.Location = new Point(281, 28);
             fCover2.Name = "fCover2";
             fCover2.Size = new Size(104, 131);
@@ -261,6 +276,7 @@
             // 
             // fCover1
             // 
+            fCover1.Anchor = AnchorStyles.None;
             fCover1.Location = new Point(177, 28);
             fCover1.Name = "fCover1";
             fCover1.Size = new Size(104, 131);
@@ -269,7 +285,8 @@
             // 
             // fCover3
             // 
-            fCover3.Location = new Point(385, 31);
+            fCover3.Anchor = AnchorStyles.None;
+            fCover3.Location = new Point(385, 28);
             fCover3.Name = "fCover3";
             fCover3.Size = new Size(104, 131);
             fCover3.TabIndex = 0;
@@ -277,6 +294,7 @@
             // 
             // fCover4
             // 
+            fCover4.Anchor = AnchorStyles.None;
             fCover4.Controls.Add(panel2);
             fCover4.Location = new Point(489, 28);
             fCover4.Name = "fCover4";
@@ -304,7 +322,7 @@
             tabPage2.Controls.Add(button1);
             tabPage2.Controls.Add(oSlot3);
             tabPage2.Controls.Add(timeSig2);
-            tabPage2.Controls.Add(pictureBox5);
+            tabPage2.Controls.Add(beatBlock1);
             tabPage2.Controls.Add(oCover4);
             tabPage2.Controls.Add(oCover1);
             tabPage2.Controls.Add(oCover2);
@@ -312,7 +330,7 @@
             tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(775, 403);
+            tabPage2.Size = new Size(791, 440);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Grade One";
             tabPage2.UseVisualStyleBackColor = true;
@@ -427,15 +445,15 @@
             timeSig2.TabIndex = 35;
             timeSig2.Text = "4/4";
             // 
-            // pictureBox5
+            // beatBlock1
             // 
-            pictureBox5.Image = Properties.Resources.original_418AC369_B0AE_4D9F_A0AD_09EC862F2199;
-            pictureBox5.Location = new Point(170, 128);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(416, 140);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 30;
-            pictureBox5.TabStop = false;
+            beatBlock1.Image = Properties.Resources.original_418AC369_B0AE_4D9F_A0AD_09EC862F2199;
+            beatBlock1.Location = new Point(170, 128);
+            beatBlock1.Name = "beatBlock1";
+            beatBlock1.Size = new Size(416, 140);
+            beatBlock1.SizeMode = PictureBoxSizeMode.StretchImage;
+            beatBlock1.TabIndex = 30;
+            beatBlock1.TabStop = false;
             // 
             // oCover4
             // 
@@ -492,7 +510,7 @@
             gradeTwoTab.Controls.Add(tSlot3);
             gradeTwoTab.Controls.Add(tSlot2);
             gradeTwoTab.Controls.Add(timeSig3);
-            gradeTwoTab.Controls.Add(pictureBox6);
+            gradeTwoTab.Controls.Add(beatBlock2);
             gradeTwoTab.Controls.Add(tCover2);
             gradeTwoTab.Controls.Add(tCover1);
             gradeTwoTab.Controls.Add(tCover4);
@@ -507,13 +525,14 @@
             gradeTwoTab.Location = new Point(4, 29);
             gradeTwoTab.Name = "gradeTwoTab";
             gradeTwoTab.Padding = new Padding(3);
-            gradeTwoTab.Size = new Size(775, 403);
+            gradeTwoTab.Size = new Size(791, 440);
             gradeTwoTab.TabIndex = 2;
             gradeTwoTab.Text = "Grade Two";
             gradeTwoTab.UseVisualStyleBackColor = true;
             // 
             // tSlot4
             // 
+            tSlot4.Anchor = AnchorStyles.None;
             tSlot4.Enabled = false;
             tSlot4.Location = new Point(472, 27);
             tSlot4.Name = "tSlot4";
@@ -526,6 +545,7 @@
             // 
             // tSlot1
             // 
+            tSlot1.Anchor = AnchorStyles.None;
             tSlot1.Location = new Point(159, 27);
             tSlot1.Name = "tSlot1";
             tSlot1.Size = new Size(104, 131);
@@ -537,6 +557,7 @@
             // 
             // tSlot3
             // 
+            tSlot3.Anchor = AnchorStyles.None;
             tSlot3.Location = new Point(362, 27);
             tSlot3.Name = "tSlot3";
             tSlot3.Size = new Size(118, 131);
@@ -548,6 +569,7 @@
             // 
             // tSlot2
             // 
+            tSlot2.Anchor = AnchorStyles.None;
             tSlot2.Location = new Point(260, 27);
             tSlot2.Name = "tSlot2";
             tSlot2.Size = new Size(110, 131);
@@ -566,15 +588,16 @@
             timeSig3.TabIndex = 63;
             timeSig3.Text = "4/4";
             // 
-            // pictureBox6
+            // beatBlock2
             // 
-            pictureBox6.Image = Properties.Resources.original_418AC369_B0AE_4D9F_A0AD_09EC862F2199;
-            pictureBox6.Location = new Point(159, 125);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(416, 140);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 58;
-            pictureBox6.TabStop = false;
+            beatBlock2.Anchor = AnchorStyles.None;
+            beatBlock2.Image = Properties.Resources.original_418AC369_B0AE_4D9F_A0AD_09EC862F2199;
+            beatBlock2.Location = new Point(159, 125);
+            beatBlock2.Name = "beatBlock2";
+            beatBlock2.Size = new Size(416, 140);
+            beatBlock2.SizeMode = PictureBoxSizeMode.StretchImage;
+            beatBlock2.TabIndex = 58;
+            beatBlock2.TabStop = false;
             // 
             // tCover2
             // 
@@ -610,6 +633,8 @@
             // 
             // tikatikaButton2
             // 
+            tikatikaButton2.Anchor = AnchorStyles.None;
+            tikatikaButton2.AutoSize = true;
             tikatikaButton2.BackColor = Color.Gray;
             tikatikaButton2.Location = new Point(554, 308);
             tikatikaButton2.Name = "tikatikaButton2";
@@ -619,6 +644,8 @@
             // 
             // longRestButton2
             // 
+            longRestButton2.Anchor = AnchorStyles.None;
+            longRestButton2.AutoSize = true;
             longRestButton2.BackColor = Color.Gray;
             longRestButton2.Location = new Point(458, 308);
             longRestButton2.Name = "longRestButton2";
@@ -628,6 +655,8 @@
             // 
             // taaButton2
             // 
+            taaButton2.Anchor = AnchorStyles.None;
+            taaButton2.AutoSize = true;
             taaButton2.BackColor = Color.Gray;
             taaButton2.Location = new Point(362, 308);
             taaButton2.Name = "taaButton2";
@@ -637,6 +666,7 @@
             // 
             // restButton2
             // 
+            restButton2.AutoSize = true;
             restButton2.BackColor = Color.FromArgb(63, 72, 204);
             restButton2.Location = new Point(266, 308);
             restButton2.Name = "restButton2";
@@ -647,6 +677,7 @@
             // 
             // titiButton2
             // 
+            titiButton2.AutoSize = true;
             titiButton2.BackColor = Color.FromArgb(255, 127, 39);
             titiButton2.Location = new Point(170, 308);
             titiButton2.Name = "titiButton2";
@@ -657,6 +688,7 @@
             // 
             // taButton2
             // 
+            taButton2.AutoSize = true;
             taButton2.BackColor = Color.FromArgb(34, 177, 76);
             taButton2.Location = new Point(74, 308);
             taButton2.Name = "taButton2";
@@ -667,6 +699,7 @@
             // 
             // button9
             // 
+            button9.AutoSize = true;
             button9.Location = new Point(650, 317);
             button9.Name = "button9";
             button9.Size = new Size(94, 38);
@@ -703,14 +736,25 @@
             panel5.Size = new Size(104, 131);
             panel5.TabIndex = 1;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Transparent;
+            panel1.Controls.Add(levelSelect);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(799, 473);
+            panel1.TabIndex = 1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(804, 450);
-            Controls.Add(levelSelect);
+            ClientSize = new Size(799, 473);
+            Controls.Add(panel1);
             Name = "Form1";
             Text = "Rhythm Blocks";
+            Load += Form1_Load;
             levelSelect.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
@@ -718,7 +762,7 @@
             ((System.ComponentModel.ISupportInitialize)fSlot4).EndInit();
             ((System.ComponentModel.ISupportInitialize)fSlot3).EndInit();
             ((System.ComponentModel.ISupportInitialize)fSlot2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)beatBlock).EndInit();
             fCover4.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
@@ -726,7 +770,7 @@
             ((System.ComponentModel.ISupportInitialize)oSlot1).EndInit();
             ((System.ComponentModel.ISupportInitialize)oSlot4).EndInit();
             ((System.ComponentModel.ISupportInitialize)oSlot3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)beatBlock1).EndInit();
             oCover4.ResumeLayout(false);
             oCover3.ResumeLayout(false);
             gradeTwoTab.ResumeLayout(false);
@@ -735,9 +779,10 @@
             ((System.ComponentModel.ISupportInitialize)tSlot1).EndInit();
             ((System.ComponentModel.ISupportInitialize)tSlot3).EndInit();
             ((System.ComponentModel.ISupportInitialize)tSlot2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)beatBlock2).EndInit();
             tCover4.ResumeLayout(false);
             tCover3.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -751,7 +796,7 @@
         private PictureBox fSlot3;
         private PictureBox fSlot2;
         private PictureBox fSlot1;
-        private PictureBox pictureBox10;
+        private PictureBox beatBlock;
         private Label timeSig;
         private Button playButton;
         private Button button1;
@@ -769,7 +814,7 @@
         private PictureBox oSlot4;
         private PictureBox oSlot3;
         private Label timeSig2;
-        private PictureBox pictureBox5;
+        private PictureBox beatBlock1;
         private Panel oCover2;
         private Panel oCover4;
         private Panel panel6;
@@ -794,7 +839,7 @@
         private PictureBox tSlot3;
         private PictureBox tSlot2;
         private Label timeSig3;
-        private PictureBox pictureBox6;
+        private PictureBox beatBlock2;
         private Panel tCover2;
         private Panel tCover1;
         private Panel tCover4;
@@ -802,5 +847,6 @@
         private Panel panel5;
         private Panel tCover3;
         private Panel panel7;
+        private Panel panel1;
     }
 }
