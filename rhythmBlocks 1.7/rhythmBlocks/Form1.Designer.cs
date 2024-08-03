@@ -323,6 +323,7 @@
             // 
             // fCover4
             // 
+            fCover4.BackColor = Color.Yellow;
             fCover4.Controls.Add(panel2);
             fCover4.Location = new Point(489, 72);
             fCover4.Name = "fCover4";
@@ -423,7 +424,7 @@
             // 
             // oSlot2
             // 
-            oSlot2.Location = new Point(275, 74);
+            oSlot2.Location = new Point(266, 74);
             oSlot2.Name = "oSlot2";
             oSlot2.Size = new Size(109, 131);
             oSlot2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -534,7 +535,7 @@
             // 
             // oCover2
             // 
-            oCover2.Location = new Point(280, 74);
+            oCover2.Location = new Point(271, 71);
             oCover2.Name = "oCover2";
             oCover2.Size = new Size(104, 131);
             oCover2.TabIndex = 37;

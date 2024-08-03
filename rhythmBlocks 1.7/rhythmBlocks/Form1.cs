@@ -14,6 +14,7 @@ namespace rhythmBlocks
         public string[] rhythmList = new string[4];
         public string[] rhythmList1 = new string[4];
         public string[] rhythmList2 = new string[4];
+        //initialize selectedRhythm
         public string selectedRhythm;
 
         public string GetPath(string name, string type)
@@ -45,7 +46,7 @@ namespace rhythmBlocks
                 {
                     return "tika-tika.wav";
                 }
-                //if sound not found, return silence. This allows for empty slot
+                //if sound not found, return rest
                 return "rest.wav";
             }
             //get paths for cursors
@@ -63,8 +64,20 @@ namespace rhythmBlocks
                 {
                     return "rest.cur";
                 }
-                //if not found, returns error image
-                return "UH_OH.cur";
+                if(name == "taa")
+                {
+                    return "ta-a.cur";
+                }
+                if(name == "saa")
+                {
+                    return "sa-a.cur";
+                }
+                if(name == "tikatika")
+                {
+                    return "tika-tika.cur";
+                }
+                //if not found, returns rest cursor
+                return "rest.cur";
             }
             //get path for images
             else
@@ -93,8 +106,8 @@ namespace rhythmBlocks
                 {
                     return "tikatika_block.png";
                 }
-                //if not found, return error image
-                return "UH_OH.jpg";
+                //if not found, return rest image
+                return "rest_block.png";
             }
 
         }
@@ -109,7 +122,7 @@ namespace rhythmBlocks
             }
         }
 
-        //plays sound list specific to which page the play button was clicked oj
+        //plays sound list specific to which page the play button was clicked on
         private void playButton_Click(object sender, EventArgs e)
         {
             playbtn(rhythmList);
@@ -122,21 +135,39 @@ namespace rhythmBlocks
         {
             playbtn(rhythmList2);
         }
+
+        //general function for updating
+        private void basicChange(PictureBox slot, int slotnum, string[] list)
+        {
+            //gets path for image, creates image variable
+            string imagePath = GetPath(selectedRhythm, "image");
+            Image newImage = Image.FromFile(imagePath);
+
+            //makes picture box visible, changes image, refreshes picturebox
+            slot.Visible = true;
+            slot.Image = newImage;
+            slot.Refresh();
+
+            //updates rhythm list
+            list[slotnum] = selectedRhythm;
+        }
+
+        //specific logic for two slot blocks
         private void addDouble(PictureBox slot, PictureBox nextslot, Panel nextpanel, int slotnum, string[] list)
         {
+            //stops two slot block from being at the end, which would break logic
             if (slotnum == 3)
             {
                 list[slotnum] = "rest";
             }
             else
             {
-                string imagePath = GetPath(selectedRhythm, "image");
-                Image newImage = Image.FromFile(imagePath);
-                slot.Visible = true;
-                slot.Image = newImage;
-                slot.Refresh();
-                list[slotnum] = selectedRhythm;
+                //performs basic  change, add a rest to the array value next to the slot clicked, making it so the block takes up to spaces
+                basicChange(slot, slotnum, list);
                 list[slotnum + 1] = "rest";
+                //makes picture box and panel next to clicked slot invisible, so they can't be clicked
+                //this is how the block takes up two spaces "visually" without the pain of microsoft bs
+                nextslot.Image = null;
                 nextslot.Visible = false;
                 nextpanel.Visible = false;
 
@@ -147,23 +178,24 @@ namespace rhythmBlocks
         //input is: slot clicked, that slot's position in the level arrray, the level array
         private void slotClick(PictureBox slot, PictureBox nextslot, Panel nextpanel, int slotnum, string[] list)
         {
+            //checks if block is a type that takes up two spaces and applies function
             if (selectedRhythm == "taa" || selectedRhythm == "saa")
             {
                 addDouble(slot, nextslot, nextpanel, slotnum, list);
             }
             else
             {
+                //checks if the slot is taken up by a two slot box, if so, turn neighbor back to visible
                 if (list[slotnum] == "taa" || list[slotnum] == "saa")
                 {
-                    nextslot.Visible = true;
                     nextpanel.Visible = true;
+                    nextslot.Visible = true;
+                    nextslot.BackColor = Color.Transparent;
+                    nextpanel.BackColor = Color.Transparent;
+
                 }
-                string imagePath = GetPath(selectedRhythm, "image");
-                Image newImage = Image.FromFile(imagePath);
-                slot.Visible = true;
-                slot.Image = newImage;
-                slot.Refresh();
-                list[slotnum] = selectedRhythm;
+                //calling basic change function
+                basicChange(slot, slotnum, list);
             }
 
         }
@@ -246,7 +278,7 @@ namespace rhythmBlocks
 
         private void oSlot1_Click(object sender, EventArgs e)
         {
-            slotClick(oSlot1, oSlot2, tCover2, 0, rhythmList1);
+            slotClick(oSlot1, oSlot2, oCover2, 0, rhythmList1);
         }
 
         private void oSlot2_Click(object sender, EventArgs e)
@@ -336,11 +368,13 @@ namespace rhythmBlocks
             buttonClick("tikatika");
         }
 
+        //stops blocks from other levels escaping to where they shouldn't be
         private void levelSelect_SelectedIndexChanged(object sender, EventArgs e)
         {
-            selectedRhythm = "rest";
+            buttonClick("rest");
         }
 
+        //resets values of array, changes pictureboxes to empty, turns picture boxes invisible
         private void clearButton_Click(object sender, EventArgs e)
         {
             rhythmList = ["rest", "rest", "rest", "rest"];
